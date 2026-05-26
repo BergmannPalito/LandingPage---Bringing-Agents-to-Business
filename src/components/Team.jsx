@@ -46,7 +46,14 @@ function TeamModal({ member, onClose }) {
               ))}
             </div>
             {member.details.contact && (
-              <a href={`mailto:${member.details.contact}`} className="modal-email">
+              <a
+                href={`mailto:${member.details.contact}?subject=${encodeURIComponent(
+                  `Kontaktanfrage über „Bringing Agents to Business" – ${member.name}`
+                )}&body=${encodeURIComponent(
+                  `Sehr geehrte/r ${member.name},\n\nmein Name ist [Ihr Name] von [Unternehmen/Institution].\n\nIch habe Ihr Profil auf der Seite „Bringing Agents to Business" gesehen und würde mich gerne mit Ihnen austauschen.\n\nMein Anliegen:\n[Bitte beschreiben Sie hier kurz Ihr Interesse]\n\nMit freundlichen Grüßen\n[Ihr Name]\n[Unternehmen/Institution]`
+                )}`}
+                className="modal-email"
+              >
                 <Mail size={14} /> {member.details.contact}
               </a>
             )}

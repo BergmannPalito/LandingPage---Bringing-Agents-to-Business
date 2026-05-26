@@ -60,7 +60,7 @@ export const team = [
         'Microsoft Learn Student Ambassadors (2017-2022)',
         'Gutachterin für ICIS, ECIS, HICSS, PACIS, AMCIS',
       ],
-      research: ['Digital Workplace & Remote Work', 'KI-basiertes Wissensmanagement', 'Employee Experience & Motivation', 'Mensch-Technologie-Kollaboration'],
+      research: ['Future of Work', 'KI-basiertes Wissensmanagement', 'Employee Experience & Motivation', 'Mensch-Technologie-Kollaboration'],
       contact: 'schaetzle@is.tu-darmstadt.de',
     },
   },
@@ -71,9 +71,9 @@ export const team = [
     initials: 'FK',
     photo: '/team-felix.jpg',
     tags: [{ label: 'TU Darmstadt', cls: 'tud' }],
-    bio: 'Felix Knop untersucht als Doktorand, wie generative und agentische KI-Systeme Entscheidungs- und Kollaborationsprozesse in Organisationen verändern.',
+    bio: 'Felix Knop untersucht als Doktorand generative und agentische KI in Organisationen, mit Fokus auf Agentic AI und Human-AI Interaction.',
     details: {
-      background: 'B.Sc. und M.Sc. in Wirtschaftsinformatik an der TU Darmstadt, inklusive Austauschjahr an der Aalto University in Finnland. Über vier Jahre als studentische Hilfskraft am Lehrstuhl tätig. Praktische Erfahrung bei BCG, Capgemini Invent und statworx (KI-Beratung). Promotion seit April 2026.',
+      background: 'B.Sc. und M.Sc. in Wirtschaftsinformatik an der TU Darmstadt, inklusive Austauschjahr an der Aalto University in Finnland. Über vier Jahre als studentische Hilfskraft am Lehrstuhl tätig. Praktische Erfahrung bei BCG, Capgemini Invent und statworx. Promotion seit April 2026.',
       achievements: [
         'Masterabschluss mit Auszeichnung (Jahrgangsbester Wirtschaftsinformatik, 2025)',
         'Mehrfacher Deutschlandstipendiat (2021-2025)',
