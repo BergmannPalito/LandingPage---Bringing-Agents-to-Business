@@ -1,26 +1,16 @@
 import {
-  FileText,
-  Users,
   Mic,
   Briefcase,
-  Code2,
   Lightbulb,
-  Wrench,
-  BookOpen,
   Sparkles,
 } from 'lucide-react'
 import { formats } from '../data'
 import './Formats.css'
 
 const formatIcons = [
-  FileText,
-  Users,
-  Mic,
   Briefcase,
-  Code2,
+  Mic,
   Lightbulb,
-  Wrench,
-  BookOpen,
 ]
 
 function Formats() {
@@ -29,20 +19,23 @@ function Formats() {
       <div className="container">
         <div className="text-center">
           <span className="section-label">
-            <Sparkles size={14} /> Zusammenarbeit
+            <Sparkles size={14} /> Angebote
           </span>
-          <h2 className="section-title">Formen der Zusammenarbeit</h2>
+          <h2 className="section-title">Was wir Interessierten anbieten</h2>
           <p className="section-subtitle margin-auto">
-            Mehrere Wege, wie unsere Kooperation Wirkung entfalten kann.
+            Konkrete Formate, um Potenziale, Risiken und nächste Schritte für AI Agents zu klären.
           </p>
         </div>
         <div className="formats-grid">
           {formats.map((f, i) => {
             const Icon = formatIcons[i]
             return (
-              <div className="format-card" key={f.title}>
-                <div className="format-icon"><Icon size={28} /></div>
-                <h4>{f.title}</h4>
+              <div className={`format-card format-card-${i + 1}`} key={f.title}>
+                <div className="format-card-top">
+                  <div className="format-icon"><Icon size={24} /></div>
+                  <span className="format-number">0{i + 1}</span>
+                </div>
+                <h3>{f.title}</h3>
                 <p>{f.desc}</p>
               </div>
             )

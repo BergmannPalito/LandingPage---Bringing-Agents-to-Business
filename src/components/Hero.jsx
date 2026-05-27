@@ -30,8 +30,8 @@ function Hero() {
               <a href="#approach" className="cta-button no-text-decoration">
                 Unser Ansatz <ChevronRight size={18} />
               </a>
-              <a href="#team" className="cta-button-secondary no-text-decoration">
-                Das Team
+              <a href="#formats" className="cta-button-secondary no-text-decoration">
+                Unsere Angebote
               </a>
             </div>
           </div>
